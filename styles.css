@@ -1,0 +1,81 @@
+* {
+	min-height: 10px;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+	background: black;
+}
+
+p {
+	color: black;
+	font-weight: bold;
+}
+
+.postcard {
+	background: white;
+	width: 430px;
+	height: 330px;
+	margin: auto; /* Centra el contenedor en la página */
+	padding: 20px; /* Agrega espaciado interior al contenedor */
+	min-height: auto; /* Restablece la altura mínima */
+}
+
+/* Estilos para el encabezado */
+.postcard-header {
+	display: flex;
+	align-items: center; /* Centra verticalmente el contenido */
+}
+
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px; /* Agrega espaciado a la derecha de la imagen */
+}
+
+.postcard-header h1 {
+	flex: 1; /* Ocupa todo el espacio disponible */
+	color: black;
+}
+
+/* Estilos para el cuerpo */
+.postcard-body {
+	display: flex;
+	margin-top: 20px; /* Añade margen superior al cuerpo */
+}
+
+.body-left {
+	flex: 1; /* Ocupa la mitad izquierda del cuerpo */
+}
+
+.body-left p:first-child {
+	margin-top: 0; /* Elimina el margen superior del primer párrafo */
+}
+
+.body-right {
+	flex: 1; /* Ocupa la mitad derecha del cuerpo */
+}
+
+/* Estilos para los campos de entrada */
+input {
+	border: 1px solid black;
+	border-radius: 5px; /* Agrega esquinas redondeadas */
+	padding: 5px;
+	margin-bottom: 10px; /* Agrega margen inferior */
+	width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilos para el pie de página */
+.postcard-footer {
+	text-align: center;
+	margin-top: 20px; /* Agrega margen superior al pie de página */
+}
+
+button {
+	background-color: gray;
+	padding: 10px 20px; /* Aumenta el espaciado del botón */
+	border: none;
+	color: white;
+	cursor: pointer; /* Cambia el cursor al pasar el ratón */
+	border-radius: 10px; /* Agrega esquinas redondeadas para hacer que el botón sea redondeado */
+}
